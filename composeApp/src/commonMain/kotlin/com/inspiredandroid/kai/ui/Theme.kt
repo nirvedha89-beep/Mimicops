@@ -1,5 +1,41 @@
 @file:Suppress("DEPRECATION")
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.darkColorScheme
+import androidx.compose.material3.lightColorScheme
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 
+// Claude color palette
+val ClaudeBg = Color(0xFF1C1C1C)
+val ClaudeSurface = Color(0xFF2A2A2A)
+val ClaudeCard = Color(0xFF323232)
+val ClaudeOrange = Color(0xFFDA7756)
+val ClaudeOrangeLight = Color(0xFFE8956D)
+val ClaudeText = Color(0xFFF2EDE3)
+val ClaudeTextSecondary = Color(0xFFB8B0A4)
+val ClaudeDivider = Color(0xFF3D3D3D)
+
+private val ClaudeDarkColorScheme = darkColorScheme(
+    primary = ClaudeOrange,
+    onPrimary = Color(0xFFF2EDE3),
+    primaryContainer = Color(0xFF5C2E1A),
+    onPrimaryContainer = ClaudeOrangeLight,
+    secondary = ClaudeOrangeLight,
+    onSecondary = Color(0xFF1C1C1C),
+    secondaryContainer = Color(0xFF3D2518),
+    onSecondaryContainer = ClaudeOrangeLight,
+    tertiary = ClaudeOrange,
+    background = ClaudeBg,
+    onBackground = ClaudeText,
+    surface = ClaudeSurface,
+    onSurface = ClaudeText,
+    surfaceVariant = ClaudeCard,
+    onSurfaceVariant = ClaudeTextSecondary,
+    outline = ClaudeDivider,
+    outlineVariant = Color(0xFF2E2E2E),
+    error = Color(0xFFCF6679),
+    onError = Color(0xFF1C1C1C),
+)
 package com.inspiredandroid.kai.ui
 
 import androidx.compose.foundation.shape.RoundedCornerShape
