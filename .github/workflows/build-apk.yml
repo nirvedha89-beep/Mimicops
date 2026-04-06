@@ -26,7 +26,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build debug APK
-        run: ./gradlew :androidApp:assembleDebug -x :screenshotTests:test
+        run: ./gradlew :androidApp:assembleDebug -x spotlessApply -x spotlessCheck -x :screenshotTests:test --no-daemon
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
